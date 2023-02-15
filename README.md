@@ -1,5 +1,5 @@
-# todo
-A simple api for todo app in django
+# Todo
+## A simple api for todo app in django
 
 #### Available API endpoints
 
