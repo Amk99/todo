@@ -55,6 +55,9 @@ class update_todo(generics.UpdateAPIView):
 class TaskDelete(APIView):
     def delete(self,request, pk):
         task = get_object_or_404(Todo,pk = pk)
-        task.delete()
-        return Response("Task deleted successfully.")
+        if not task.completed:
+            return Response("Cannot delete Incomplete Task")
+        else:
+            task.delete()
+            return Response("Task deleted successfully.")
 
