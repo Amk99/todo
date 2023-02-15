@@ -25,3 +25,11 @@ class MarkAsCompleted(APIView):
         todo.completed = True
         todo.save()
         return Response({'Message': 'Task marked as completed'}, status=status.HTTP_200_OK)
+
+
+class MarkAsInComplete(APIView):
+    def put(self, request, pk):
+        todo = Todo.objects.get(pk=pk)
+        todo.completed = True
+        todo.save()
+        return Response({'Message': 'Task marked as Incomplete'}, status=status.HTTP_200_OK)
