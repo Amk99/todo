@@ -1,15 +1,6 @@
 # Todo
 ## A simple api for todo app in django
 This is an hackathon hosting application created with django and django rest freamework.The app application is divided into three apps.<br>
-#### The Users app
-This app handles user registration and authorization.It uses a custom user model which uses Email for authentication. Token based authentication system is implemented.The userprofile model stoes user information, mainly added keeping scalablity in mind.
-
-#### The hackathon_api app
-The hackathon_api app handles all fuctions for hackathon management.It allows creation,Listing and registraion of hackathons.The endpoints in this app are only acessable to authentiated user.
-
-#### Submissions app
-
-This app handels submissions.I allows to submit your submissions to hackathons as well as viewing your past submissions.
 
 
 #### Available API endpoints
